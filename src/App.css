@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--color);
+  font-family: var(--font-family) 
+
+}
+/* body { */
+  /* background: radial-gradient(circle, rgba(2,0,36,1) 28%, rgba(0,212,255,1) 49%, rgba(6,6,54,1) 70%); */
+/* } */
+.App {
+  text-align: center;
+}
