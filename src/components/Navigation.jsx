@@ -13,12 +13,15 @@ function Navigation() {
     <Box m="5">
       <Flex alignItems="center">
         <Box>
-          <Heading color="white" size="xl">
+          <Heading color="white" fontSize={["10", "12", "17", "21"]}>
             Codewithmubi
           </Heading>
         </Box>
         <Spacer />
-        <Box sm={{ display: "none" }}>
+        <Box
+          fontSize={["9", "10", "12", "15"]}
+          display={{ base: "none", md: "block", lg: "block" }}
+        >
           <Link to="/skill" style={link}>
             Skill
           </Link>

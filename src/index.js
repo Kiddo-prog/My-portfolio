@@ -8,11 +8,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./routes/Contact";
 import Skill from "./routes/Skill";
 import theme from "./theme";
+import { ColorModeScript } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>

@@ -11,43 +11,52 @@ import {
   useDisclosure,
   DrawerCloseButton,
 } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 function Menu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = useState("right");
 
   const menuLink = {
+    display: "block",
     color: "#fff",
     fontSize: "1.5em",
     fontWeight: "600",
-    marginBottom: "2em",
+    marginBottom: "1em",
   };
 
   return (
     <>
       {" "}
-      <Box>
+      <Box display={{ base: "block", md: "none", lg: "none" }}>
         <Button
           colorScheme="blue"
           onClick={onOpen}
           style={{ position: "fixed", bottom: "5%", right: "20px" }}
         >
-          +
+          <HamburgerIcon color="white" />
         </Button>
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>
             <DrawerHeader borderBottomWidth="1px" color="white">
               Menu
-              <DrawerCloseButton size="xl" style={{ marginTop: "10px" }} />
+              <DrawerCloseButton
+                size={["10", "15", "20", "25"]}
+                style={{ marginTop: "10px" }}
+              />
             </DrawerHeader>
             <DrawerBody>
-              <Box>
+              <Box
+                fontSize={["8", "10", "14", "16"]}
+                marginTop={5}
+                marginLeft={2}
+              >
                 <Link to="/skill" style={menuLink}>
                   Skill
                 </Link>
-              </Box>
-              <Box>
+                {/* </Box>
+              <Box fontSize={["10", "15", "20", "25"]}> */}
                 <Link to="/contact" style={menuLink}>
                   Contact
                 </Link>
