@@ -18,9 +18,9 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>
-            <Route path="/skill" element={<Skill />} />
-            <Route path="/contact" element={<Contact />} />
-          </Route>
+          <Route path="/skill" element={<Skill />} />
+          <Route path="/contact" element={<Contact />} />
+          </Route >
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

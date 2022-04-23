@@ -4,9 +4,13 @@ import { Box, Heading, Flex } from "@chakra-ui/react";
 function Contact() {
   return (
     <>
-      <Box>
-        <Heading fontSize={["15px", "20px", "30px", "40px"]} color="white">
-          <Flex justifyContent="center">Contact Me</Flex>
+      <Box id="contact" marginTop={['2em', "5em"]}>
+        <Heading
+          as="h2"
+          textAlign="center"
+          fontSize={["12px", "20px", "30px", "40px"]}
+        >
+          Contact Me
         </Heading>
       </Box>
     </>

@@ -19,7 +19,6 @@ function Menu() {
 
   const menuLink = {
     display: "block",
-    color: "#fff",
     fontSize: "1.5em",
     fontWeight: "600",
     marginBottom: "1em",
@@ -34,12 +33,12 @@ function Menu() {
           onClick={onOpen}
           style={{ position: "fixed", bottom: "5%", right: "20px" }}
         >
-          <HamburgerIcon color="white" />
+          <HamburgerIcon />
         </Button>
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>
-            <DrawerHeader borderBottomWidth="1px" color="white">
+            <DrawerHeader borderBottomWidth="1px">
               Menu
               <DrawerCloseButton
                 size={["10", "15", "20", "25"]}
@@ -48,7 +47,7 @@ function Menu() {
             </DrawerHeader>
             <DrawerBody>
               <Box
-                fontSize={["8", "10", "14", "16"]}
+                fontSize={["10", "12", "14", "16"]}
                 marginTop={5}
                 marginLeft={2}
               >

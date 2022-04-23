@@ -1,0 +1,32 @@
+{
+     "projects": [
+          {
+               "id": 1,
+               "title": "Metabolite Web Site",
+               "image": "",
+               "description": "Built with NextJs, designed with vanilla CSS",
+               "link": ""
+          },
+          {
+               "id": 2,
+               "title": "News Aggregator",
+               "image": "",
+               "description": "Created with Python web Framework, Django. With a sophisticated backend and a search functionality. Added Django Apscheduler for handling tasks, Postgresql for Database storage",
+               "link": ""
+          },
+          {
+               "id": 3,
+               "title": "Movies App",
+               "image": "",
+               "description": "Built with React Library, Backed with Redux @toolkit for state management... Fetch Api with Ajax calls",
+               "link": ""
+          },
+          {
+               "id": 4,
+               "title": "Expense Tracker",
+               "image": "",
+               "description": "This Web App is powered by Python Framework, Django as backend, React for frontend... Design made with Bootstrap with great functionality, Chart powered by ChartJs",
+               "link": ""
+          }
+     ]
+}

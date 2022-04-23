@@ -1,20 +1,31 @@
 import React from "react";
 import { Flex, Spacer, Heading, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+// import { useColorMode } from "@chakra-ui/react";
 
-function Navigation() {
+function Navigation({ mode }) {
+  // const { colorMode, toggleColorMode } = useColorMode("dark");
   const link = {
-    color: "#fff",
     letterSpacing: "1.5px",
     marginLeft: "1em",
     fontSize: "1.5em",
   };
   return (
-    <Box m="5">
+    <Box
+      boxShadow={
+        mode === "dark" ? "1px 3px 5px #fff" : "1px 3px 5px rgb(2,0,36)"
+      }
+      p={5}
+      borderBottomRadius={["3em", "1em"]}
+    >
       <Flex alignItems="center">
         <Box>
-          <Heading color="white" fontSize={["10", "12", "17", "21"]}>
-            Codewithmubi
+          <Heading
+            fontSize={["13", "18", "21", "24"]}
+            display="flex"
+            alignSelf={["center", "flex-start"]}
+          >
+            <Link to="/">Codewithmubi</Link>
           </Heading>
         </Box>
         <Spacer />

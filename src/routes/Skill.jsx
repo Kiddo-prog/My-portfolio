@@ -1,18 +1,24 @@
 import React from "react";
 import { Box, Flex, Text, Heading } from "@chakra-ui/react";
+import Portfolio from "../components/Portfolio";
 
 function Skill() {
   return (
-    <Box>
+    <Box id="skill" marginTop={["2em", "5em"]}>
+      <Heading
+        as="h2"
+        fontSize={["16px", "19px", "27px", "35px"]}
+        marginBottom={["1em", "0.5em"]}
+        letterSpacing="2px"
+        textAlign="center"
+      >
+        My Skill
+      </Heading>
+      <Text textAlign="center" fontSize={["12px", "17px", "25px", "29px"]}>
+        Check out my portfolio to see my previous projects
+      </Text>
       <Flex justifyContent="center">
-        <Heading
-          as="h2"
-          fontSize={["10", "12", "17", "21"]}
-          color="white"
-          letterSpacing="2px"
-        >
-          My Skill
-        </Heading>
+        <Portfolio />
       </Flex>
     </Box>
   );
