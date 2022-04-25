@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 // import { useColorMode } from "@chakra-ui/react";
 
 function Navigation({ mode }) {
-  // const { colorMode, toggleColorMode } = useColorMode("dark");
   const link = {
     letterSpacing: "1.5px",
     marginLeft: "1em",
@@ -16,15 +15,10 @@ function Navigation({ mode }) {
         mode === "dark" ? "1px 3px 5px #fff" : "1px 3px 5px rgb(2,0,36)"
       }
       p={5}
-      borderBottomRadius={["3em", "1em"]}
     >
       <Flex alignItems="center">
         <Box>
-          <Heading
-            fontSize={["13", "18", "21", "24"]}
-            display="flex"
-            alignSelf={["center", "flex-start"]}
-          >
+          <Heading fontSize={["13", "18", "21", "24"]} display="flex">
             <Link to="/">Codewithmubi</Link>
           </Heading>
         </Box>

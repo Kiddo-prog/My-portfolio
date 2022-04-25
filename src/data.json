@@ -3,15 +3,15 @@
           {
                "id": 1,
                "title": "Metabolite Web Site",
-               "image": "",
+               "image": "/images/shot2.png",
                "description": "Built with NextJs, designed with vanilla CSS",
-               "link": ""
+               "link": "https://www.google.com"
           },
           {
                "id": 2,
                "title": "News Aggregator",
                "image": "",
-               "description": "Created with Python web Framework, Django. With a sophisticated backend and a search functionality. Added Django Apscheduler for handling tasks, Postgresql for Database storage",
+               "description": "Created with Python web Framework, Django. With a robust backend and a search functionality, I added Django Apscheduler for handling tasks, Postgresql for Database storage",
                "link": ""
           },
           {
@@ -26,6 +26,13 @@
                "title": "Expense Tracker",
                "image": "",
                "description": "This Web App is powered by Python Framework, Django as backend, React for frontend... Design made with Bootstrap with great functionality, Chart powered by ChartJs",
+               "link": ""
+          },
+          {
+               "id": 5,
+               "title": "Blog App",
+               "image": "",
+               "description": "This Web App is powered by Python Framework, Django as backend... Design made with Bootstrap with great functionality",
                "link": ""
           }
      ]

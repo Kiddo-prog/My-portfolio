@@ -8,6 +8,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./routes/Contact";
 import Skill from "./routes/Skill";
 import theme from "./theme";
+import Navigation from "./components/Header.jsx";
+import Menu from "./components/Menu.jsx";
+import DarkMode from "./components/Color";
+
 import { ColorModeScript } from "@chakra-ui/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,12 +20,14 @@ root.render(
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <BrowserRouter>
+        <Navigation />
         <Routes>
-          <Route path="/" element={<App />}>
+          <Route path="/" element={<App />} />
           <Route path="/skill" element={<Skill />} />
           <Route path="/contact" element={<Contact />} />
-          </Route >
         </Routes>
+        <Menu />
+        <DarkMode />
       </BrowserRouter>
     </ChakraProvider>
   </React.StrictMode>
