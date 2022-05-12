@@ -2,7 +2,7 @@
      "projects": [
           {
                "id": 1,
-               "title": "Metabolite Web Site",
+               "title": "School Web Site",
                "image": "/images/shot2.png",
                "description": "Built with NextJs, designed with vanilla CSS",
                "link": "https://www.google.com"

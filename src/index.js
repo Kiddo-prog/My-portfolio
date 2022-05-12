@@ -5,12 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Contact from "./routes/Contact";
-import Skill from "./routes/Skill";
 import theme from "./theme";
-import Navigation from "./components/Header.jsx";
-import Menu from "./components/Menu.jsx";
-import DarkMode from "./components/Color";
+import Navigation from "./components/Header";
+import Menu from "./components/Menu";
+import DarkMode from "./components/utils/Color.jsx";
+import Footer from "./components/Footer";
+import Services from "./routes/Services";
+import Testimonial from "./routes/Testimonial";
+import Portfolio from "./routes/Portfolio";
 
 import { ColorModeScript } from "@chakra-ui/react";
 
@@ -23,11 +25,13 @@ root.render(
         <Navigation />
         <Routes>
           <Route path="/" element={<App />} />
-          <Route path="/skill" element={<Skill />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
         <Menu />
         <DarkMode />
+        <Footer />
       </BrowserRouter>
     </ChakraProvider>
   </React.StrictMode>

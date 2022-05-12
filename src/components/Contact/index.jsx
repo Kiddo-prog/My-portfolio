@@ -1,10 +1,10 @@
 import React from "react";
-import ContactMe from "../components/ContactMe.jsx";
+import Form from "./ContactForm.jsx";
 
 function Contact() {
   return (
     <>
-      <ContactMe />
+      <Form />
     </>
   );
 }

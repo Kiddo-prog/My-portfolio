@@ -1,32 +1,51 @@
 import React from "react";
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Image,
+  Text,
+  Button,
+  Flex,
+  Spacer,
+} from "@chakra-ui/react";
+// import Design from "../components/Design";
 
 export default function About() {
   return (
-    <Box p={5} display={{ md: "flex" }} margin={10}>
-      <Box w={{ base: "100%", md: "70%", lg: "70%" }}>
-        <Heading
-          fontSize={["15", "20", "30", "35"]}
-          fontStyle="italic"
-          marginBottom={3}
-        >
-          About Me
-        </Heading>
-        <Text fontSize={["12", "14", "17", "19"]} fontWeight="600">
-          My name is Hussein Mubarak. I'm a software developer from Nigeria.
-        </Text>
-      </Box>
-      <Box flexShrink="0" mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-        <Image
-          boxSize="200px"
-          objectFit="cover"
-          borderRadius="full"
-          src="/images/profile.jpg"
-          alt="my profile"
-          boxShadow={"1px 5px 10px #000, 4px -4px 10px #000"}
-          display={{ base: "none", md: "block", lg: "block" }}
-        />
-      </Box>
+    <Box p={5} mx={{ base: "3em", md: "3.5em", lg: "4.5em" }} my="3em">
+      {/* <Design /> */}
+      <Flex>
+        <Box maxW={{ base: "100%", md: "50%", lg: "60%" }}>
+          <Heading
+            fontSize={["17", "20", "26", "31"]}
+            fontStyle="italic"
+            marginBottom={3}
+          >
+            I'm a FullStack Developer
+          </Heading>
+          <Text fontSize={["14", "16", "18", "20"]} fontWeight="600">
+            My name is Hussein Mubarak. Passionate about programming, love
+            solving problems and most importantly, contributing to the world.
+            Also, deliver more than expected.
+          </Text>
+          <Box>
+            <Button download mt={3}>
+              Resume
+            </Button>
+          </Box>
+        </Box>
+        <Spacer />
+        <Box flexShrink="0" mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+          <Image
+            boxSize="250px"
+            objectFit="cover"
+            // borderRadius="full"
+            src="/images/profile.png"
+            alt="my profile"
+            display={{ base: "none", md: "block", lg: "block" }}
+          />
+        </Box>
+      </Flex>
     </Box>
   );
 }

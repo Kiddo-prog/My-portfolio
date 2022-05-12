@@ -1,5 +1,5 @@
 import React from "react";
-import data from "../data.json";
+import data from "../../data.json";
 import {
   Box,
   Text,
@@ -7,9 +7,14 @@ import {
   Image,
   Button,
   Heading,
+  useColorModeValue,
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-function Portfolio() {
+export default function PortfolioComponent() {
+  const bg = useColorModeValue("rgb(2,0,36)", "#fff");
+  const color = useColorModeValue("#fff", "rgb(2,0,36)");
+  const bgColor = useColorModeValue("#fff", "rgb(2,0,36)");
   const items = data.projects;
   const styleLink = {
     display: "flex",
@@ -26,7 +31,13 @@ function Portfolio() {
       justifyItems="center"
     >
       {items.map((item) => (
-        <Box key={item.id} border="2px solid" padding={3}>
+        <Box
+          key={item.id}
+          padding={3}
+          borderRadius="10px"
+          bg={bg}
+          color={color}
+        >
           <Image src={item.image} alt="portfolio" objectFit="contain" />
           <Heading
             textAlign="center"
@@ -38,13 +49,13 @@ function Portfolio() {
           <Text w={["100%", null, "100%"]} margin="1em auto" letterSpacing={1}>
             {item.description}
           </Text>
-          <Button style={styleLink}>
-            <a href={item.link}>Visit</a>
+          <Button style={styleLink} bgColor={bgColor} color={color}>
+            <a href={item.link}>
+              <ExternalLinkIcon color={bg} />
+            </a>
           </Button>
         </Box>
       ))}
     </SimpleGrid>
   );
 }
-
-export default Portfolio;

@@ -15,7 +15,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 
 function Menu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [placement, setPlacement] = useState("right");
+  const [placement, setPlacement] = useState("top");
 
   const menuLink = {
     display: "block",
@@ -39,7 +39,7 @@ function Menu() {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerHeader borderBottomWidth="1px">
-              Menu
+              <Link to="/">Home</Link>
               <DrawerCloseButton
                 size={["10", "15", "20", "25"]}
                 style={{ marginTop: "10px" }}
@@ -51,14 +51,15 @@ function Menu() {
                 marginTop={5}
                 marginLeft={2}
               >
-                <Link to="/skill" style={menuLink}>
-                  Skill
+                <Link to="/portfolio" style={menuLink}>
+                  Portfolio
+                </Link>{" "}
+                <Link to="/service" style={menuLink}>
+                  Service
                 </Link>
-                {/* </Box>
-              <Box fontSize={["10", "15", "20", "25"]}> */}
-                <Link to="/contact" style={menuLink}>
-                  Contact
-                </Link>
+                {/* <Link to="/testimonial" style={menuLink}>
+                  Testimonial
+                </Link> */}
               </Box>
             </DrawerBody>
           </DrawerContent>

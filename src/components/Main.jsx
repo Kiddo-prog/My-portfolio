@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import Skill from "../routes/Skill.jsx";
-import Contact from "../routes/Contact.jsx";
+import Contact from "./Contact";
+import Skill from "./Skill";
 
 function Main() {
   return (
