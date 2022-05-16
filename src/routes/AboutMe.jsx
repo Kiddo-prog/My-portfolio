@@ -1,7 +1,15 @@
 import React from "react";
 import { Box, Text, Heading } from "@chakra-ui/react";
+import { useTypewriter } from 'react-simple-typewriter'
 
 export default function AboutMe() {
+  const {text} = useTypewriter({
+    words: ['Richer', 'Smarter', 'Happier'],
+    loop: 0,
+    typeSpeed: 70,
+    cursorStyle: '|'
+  })
+
   return (
     <Box my={["3em", "4em"]} mx={["2em", "3em"]}>
       <Heading
@@ -18,7 +26,7 @@ export default function AboutMe() {
         collaboration with teams while contributing to the positive outcome of
         making people{" "}
         <b>
-          <i>"richer, smarter and happier"</i>
+          <i>{text}</i>
         </b>
       </Text>
     </Box>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {
   Drawer,
   DrawerBody,
-  //   DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -12,7 +11,6 @@ import {
   DrawerCloseButton,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { useColorModeValue } from "@chakra-ui/react";
 
 function MobileMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
