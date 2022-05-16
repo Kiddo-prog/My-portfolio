@@ -30,11 +30,12 @@ function Form() {
     console.log(input);
   };
   return (
-    <Box id="contact" mx={{ base: "5em", md: "8em", lg: "12em" }} my="5em">
+    <Box id="contact" mx={{ base: "2em", md: "4em", lg: "6em" }} my="5em">
       <Heading
         as="h2"
         textAlign="center"
-        fontSize={["20px", "25px", "30px", "36px"]}
+        fontSize={["28px", "34px", "39px", "45px"]}
+        mb="1.5em"
       >
         Contact Me
       </Heading>

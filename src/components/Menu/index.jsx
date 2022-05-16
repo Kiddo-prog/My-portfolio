@@ -12,14 +12,15 @@ import {
   DrawerCloseButton,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { useColorModeValue } from "@chakra-ui/react";
 
-function Menu() {
+function MobileMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [placement, setPlacement] = useState("top");
 
   const menuLink = {
     display: "block",
-    fontSize: "1.5em",
+    fontSize: "1.8em",
     fontWeight: "600",
     marginBottom: "1em",
   };
@@ -28,11 +29,7 @@ function Menu() {
     <>
       {" "}
       <Box display={{ base: "block", md: "none", lg: "none" }}>
-        <Button
-          colorScheme="blue"
-          onClick={onOpen}
-          style={{ position: "fixed", bottom: "5%", right: "20px" }}
-        >
+        <Button colorScheme="blue" onClick={onOpen}>
           <HamburgerIcon />
         </Button>
         <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
@@ -46,11 +43,10 @@ function Menu() {
               />
             </DrawerHeader>
             <DrawerBody>
-              <Box
-                fontSize={["10", "12", "14", "16"]}
-                marginTop={5}
-                marginLeft={2}
-              >
+              <Box fontSize={["10", "12", "14", "16"]} my="30px">
+                <Link to="/about" style={menuLink}>
+                  About
+                </Link>
                 <Link to="/portfolio" style={menuLink}>
                   Portfolio
                 </Link>{" "}
@@ -69,4 +65,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default MobileMenu;

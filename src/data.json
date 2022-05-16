@@ -5,35 +5,46 @@
                "title": "School Web Site",
                "image": "/images/shot2.png",
                "description": "Built with NextJs, designed with vanilla CSS",
-               "link": "https://www.google.com"
+               "link": "https://metabolite-web-project.vercel.app/",
+               "tags": [
+                    "html",
+                    "css"
+               ]
           },
           {
                "id": 2,
                "title": "News Aggregator",
                "image": "",
                "description": "Created with Python web Framework, Django. With a robust backend and a search functionality, I added Django Apscheduler for handling tasks, Postgresql for Database storage",
-               "link": ""
+               "link": "https://allnewstime.herokuapp.com/"
           },
           {
                "id": 3,
                "title": "Movies App",
                "image": "",
                "description": "Built with React Library, Backed with Redux @toolkit for state management... Fetch Api with Ajax calls",
-               "link": ""
+               "link": "https://movies-app-two-fawn.vercel.app/"
           },
           {
                "id": 4,
                "title": "Expense Tracker",
                "image": "",
                "description": "This Web App is powered by Python Framework, Django as backend, React for frontend... Design made with Bootstrap with great functionality, Chart powered by ChartJs",
-               "link": ""
+               "link": "https://expensewebproject.herokuapp.com/docs"
           },
           {
                "id": 5,
                "title": "Blog App",
                "image": "",
                "description": "This Web App is powered by Python Framework, Django as backend... Design made with Bootstrap with great functionality",
-               "link": ""
+               "link": "https://codewithmubi.herokuapp.com/"
+          },
+          {
+               "id": 6,
+               "title": "Pizza App",
+               "image": "",
+               "description": "This Web App is powered by Python Framework, Django as backend. Design made with Bootstrap with great functionality. Feature includes Login & Register, Cart, Checkout and Order Placement",
+               "link": "https://pizzawebproject.herokuapp.com/"
           }
      ]
 }

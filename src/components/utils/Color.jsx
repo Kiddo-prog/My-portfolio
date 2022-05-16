@@ -8,7 +8,7 @@ export default function DarkMode() {
     <>
       <Button
         onClick={toggleColorMode}
-        style={{ position: "fixed", bottom: "5%", left: "20px" }}
+        style={{ position: "fixed", bottom: "5%", right: "20px" }}
         border={colorMode === "dark" ? "1px solid #fff" : "1px solid #000"}
         bgColor={colorMode === "dark" ? "rgb(2,0,36)" : "#fff"}
       >

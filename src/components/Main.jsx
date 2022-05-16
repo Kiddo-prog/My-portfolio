@@ -5,10 +5,10 @@ import Skill from "./Skill";
 
 function Main() {
   return (
-    <Box>
+    <>
       <Skill />
       <Contact />
-    </Box>
+    </>
   );
 }
 
