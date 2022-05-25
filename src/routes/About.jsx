@@ -36,7 +36,7 @@ export default function About() {
           </Heading>
           <Text fontSize={["14", "16", "19", "22"]} fontWeight="400">
             My name is Hussein Mubarak. Passionate about programming, love
-            solving problems and most importantly, contributing to the world.
+            solving problems and most importantly, contributing to the world through tech.
             Also, deliver more than expected.
           </Text>
           <Box>

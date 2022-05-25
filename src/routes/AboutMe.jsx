@@ -21,8 +21,8 @@ export default function AboutMe() {
         About me
       </Heading>
       <Text fontSize={["14", "16", "19", "22"]} fontWeight="400">
-        Fullstatck develper with a passion for developing scalable web
-        applications and working across fullstack. Growing my skillset, great
+        Fullstack developer with a passion for developing scalable web
+        applications. Growing my skillset, great
         collaboration with teams while contributing to the positive outcome of
         making people{" "}
         <b>
