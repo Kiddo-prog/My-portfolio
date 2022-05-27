@@ -4,7 +4,7 @@
                "id": 1,
                "title": "School Web Site",
                "image": "/images/metabolite.png",
-               "description": "Built with NextJs, designed with vanilla CSS. It contains Teacher, Courses, Blog, About views. I created this project to solve the problem of easy accessibility of lecturers and professors in the department.",
+               "description": "Built with NextJs, designed with vanilla CSS. It contains Teacher, Courses, Blog, About views. I created this project to solve the problem of easy accessibility to lecturers and professors in the department.",
                "link": "https://metabolite-web-project.vercel.app/",
                "tags": [
                     "html",
