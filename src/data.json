@@ -30,7 +30,7 @@
                "title": "Expense Tracker",
                "image": "/images/expense.png",
                "description": "This Web App is powered by Python Framework, Django as backend, React for frontend... Design made with Chakra UI. I used Redux-persist for storing authentication keys collected from backend",
-               "link": "https://expensewebproject.herokuapp.com/docs"
+               "link": "https://expense-tracker-six-rho.vercel.app/"
           },
           {
                "id": 5,

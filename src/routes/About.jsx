@@ -28,13 +28,13 @@ export default function About() {
       <Flex>
         <Box maxW={{ base: "100%", md: "50%", lg: "60%" }}>
           <Heading
-            fontSize={["24", "29", "33", "37"]}
+            fontSize={["20", "28", "32", "35"]}
             fontStyle="italic"
             marginBottom="25px"
           >
             I'm a&nbsp;{text}&nbsp;Developer
           </Heading>
-          <Text fontSize={["14", "16", "19", "22"]} fontWeight="400">
+          <Text fontSize={["13", "16", "19", "22"]} fontWeight="400">
             My name is Hussein Mubarak. Passionate about programming, love
             solving problems and most importantly, contributing to the world through tech.
             Also, deliver more than expected.
@@ -97,7 +97,7 @@ export default function About() {
           <Image
             boxSize="250px"
             objectFit="cover"
-            src="/images/profile.png"
+            src="/images/man.png"
             alt="my profile"
             display={{ base: "none", md: "block", lg: "block" }}
           />

@@ -33,7 +33,7 @@ export default function Skill() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
         },
       },
@@ -49,7 +49,7 @@ export default function Skill() {
       >
         Skills
       </Heading>
-      <Box marginY="2em" overflow="hidden" ml="10px">
+      <Box marginY="2em" overflow="hidden">
         <Slider {...settings}>
           <div>
             <img
