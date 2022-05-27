@@ -3,8 +3,8 @@
           {
                "id": 1,
                "title": "School Web Site",
-               "image": "/images/shot2.png",
-               "description": "Built with NextJs, designed with vanilla CSS",
+               "image": "/images/metabolite.png",
+               "description": "Built with NextJs, designed with vanilla CSS. It contains Teacher, Courses, Blog, About views. I created this project to solve the problem of easy accessibility of lecturers and professors in the department.",
                "link": "https://metabolite-web-project.vercel.app/",
                "tags": [
                     "html",
@@ -14,37 +14,44 @@
           {
                "id": 2,
                "title": "News Aggregator",
-               "image": "",
-               "description": "Created with Python web Framework, Django. With a robust backend and a search functionality, I added Django Apscheduler for handling tasks, Postgresql for Database storage",
+               "image": "/images/news.png",
+               "description": "Created with Python web Framework, Django. With a robust backend and a search functionality, I added Django Apscheduler for handling tasks, Postgresql for Database storage. Hosted with heroku also implemented the power of Bootstrap",
                "link": "https://allnewstime.herokuapp.com/"
           },
           {
                "id": 3,
                "title": "Movies App",
-               "image": "",
-               "description": "Built with React Library, Backed with Redux @toolkit for state management... Fetch Api with Ajax calls",
+               "image": "/images/movies.png",
+               "description": "Built with React Library, Backed with Redux @toolkit for state management... Fetch Api with Ajax calls. I implemented with app with search engine with both movies and series search.",
                "link": "https://movies-app-two-fawn.vercel.app/"
           },
           {
                "id": 4,
                "title": "Expense Tracker",
-               "image": "",
-               "description": "This Web App is powered by Python Framework, Django as backend, React for frontend... Design made with Bootstrap with great functionality, Chart powered by ChartJs",
+               "image": "/images/expense.png",
+               "description": "This Web App is powered by Python Framework, Django as backend, React for frontend... Design made with Chakra UI. I used Redux-persist for storing authentication keys collected from backend",
                "link": "https://expensewebproject.herokuapp.com/docs"
           },
           {
                "id": 5,
                "title": "Blog App",
-               "image": "",
-               "description": "This Web App is powered by Python Framework, Django as backend... Design made with Bootstrap with great functionality",
+               "image": "/images/blog.png",
+               "description": "This Web App is powered by Python Framework, Django as backend... Design made with Bootstrap for design. I added Wagtail for Content Management.",
                "link": "https://codewithmubi.herokuapp.com/"
           },
           {
                "id": 6,
                "title": "Pizza App",
-               "image": "",
+               "image": "/images/pizza.png",
                "description": "This Web App is powered by Python Framework, Django as backend. Design made with Bootstrap with great functionality. Feature includes Login & Register, Cart, Checkout and Order Placement",
                "link": "https://pizzawebproject.herokuapp.com/"
+          },
+          {
+               "id": 7,
+               "title": "Expense Tracker Swagger UI",
+               "image": "/images/swagger.png",
+               "description": "Expense Tracker backend interface made with Python(Django). I implemented the user interface with Swagger UI also added Authorization with rest_framework authorization where every route is protected. Also included CORS header for cross- origin.",
+               "link": "https://expensewebproject.herokuapp.com/docs"
           }
      ]
 }
