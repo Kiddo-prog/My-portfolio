@@ -20,7 +20,7 @@
                "id": 3,
                "title": "Movies App",
                "image": "/images/movies.PNG",
-               "description": "Built with React Library, Backed with Redux @toolkit for state management... Fetch Api with Ajax calls. I implemented with app with search engine with both movies and series search.",
+               "description": "Built with React Library, Backed with Redux @toolkit for state management... Fetch Api with Ajax calls. I implemented the app with search input containing both movies and series search.",
                "link": "https://movies-app-two-fawn.vercel.app/",
                "github": "https://github.com/Kiddo-prog/movies-app"
           },
