@@ -8,8 +8,11 @@ import {
   Button,
   Heading,
   useColorModeValue,
+  Flex
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { FaGithub } from 'react-icons/fa'
+import Reveal  from "react-reveal/Reveal";
 
 export default function PortfolioComponent() {
   const bg = useColorModeValue("rgb(2,0,36)", "#fff");
@@ -21,7 +24,6 @@ export default function PortfolioComponent() {
   );
   const items = data.projects;
   const styleLink = {
-    display: "flex",
     margin: "auto",
     width: "100%",
   };
@@ -43,6 +45,7 @@ export default function PortfolioComponent() {
         placeContent="center"
         justifyItems="center"
       >
+        <Reveal effect="fadeInUp">
         {items.map((item) => (
           <Box
             key={item.id}
@@ -68,18 +71,33 @@ export default function PortfolioComponent() {
             >
               {item.description}
             </Text>
-            <a href={item.link} target="_blank" rel="noreferrer">
+            <Flex justifyContent={'space-between'} alignItems={'center'} columnGap={'1em'}>
               <Button
-                style={styleLink}
+                as={"a"}
+                target={'_blank'}
+                href={item.link}
                 bgColor={bgColor}
+                style={styleLink}
                 color={color}
                 type="button"
               >
                 <ExternalLinkIcon color={bg} />
               </Button>
-            </a>
+              <Button
+                as={"a"}
+                target={'_blank'}
+                href={item.github}
+                style={styleLink}
+                bgColor={bgColor}
+                color={color}
+                type="button"
+              >
+                <FaGithub color={bg} />
+              </Button>
+            </Flex>
           </Box>
         ))}
+        </Reveal>
       </SimpleGrid>
     </>
   );
