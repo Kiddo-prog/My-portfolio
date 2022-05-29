@@ -20,7 +20,7 @@ export default function AboutMe() {
       >
         About me
       </Heading>
-      <Text fontSize={["14", "16", "19", "22"]} fontWeight="400">
+      <Text fontSize={["14", "16", "19", "22"]} fontWeight="400" fontStyle={'italic'}>
         Fullstack developer with a passion for developing scalable web
         applications. Growing my skillset, great
         collaboration with teams while contributing to the positive outcome of
