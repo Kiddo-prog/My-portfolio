@@ -49,7 +49,7 @@ export default function Skill() {
       >
         Skills
       </Heading>
-      <Box marginY="2em" overflow="hidden">
+      <Box marginY={"2em"} marginX={'1em'} overflow="hidden">
         <Slider {...settings}>
           <div>
             <img
