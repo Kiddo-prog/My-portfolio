@@ -44,7 +44,7 @@ export default function Skill() {
       <Heading
         fontSize={["18px", "20px", "24px", "35px"]}
         mb="2em"
-        fontStyle="italic"
+        fontFamily={'"Public Sans", sans-serif'}
         ml="2em"
       >
         Skills
