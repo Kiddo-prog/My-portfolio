@@ -8,9 +8,10 @@ export default function DarkMode() {
     <>
       <Button
         onClick={toggleColorMode}
-        style={{ position: "fixed", bottom: "5%", right: "20px" }}
-        border={colorMode === "dark" ? "1px solid #fff" : "1px solid #000"}
-        bgColor={colorMode === "dark" ? "rgb(2,0,36)" : "#fff"}
+        // bgColor={colorMode === "dark" ? "rgb(2,0,36)" : "#fff"}
+        outline={'none'}
+        border={'none'}
+        _hover={{bgColor: 'none'}}
       >
         {colorMode === "dark" ? <SunIcon /> : <MoonIcon />}
       </Button>
