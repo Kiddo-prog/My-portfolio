@@ -3,18 +3,18 @@ import { Box, Text } from "@chakra-ui/react";
 import { useColorModeValue } from "@chakra-ui/react";
 
 export default function Footer() {
-  const bg = useColorModeValue("rgb(2,0,36)", "#fff");
-  const color = useColorModeValue("#fff", "rgb(2,0,36)");
-  // const border = useColorModeValue("#fff", "rgb(2,0,36)");
+  const color = useColorModeValue("rgb(2,0,36)", "#fff");
   const date = new Date().getFullYear();
   return (
     <>
-      <Box bgColor={bg} padding={5} style={{ bottom: 0 }}>
+      <Box padding={5} style={{ bottom: 0 }}>
         <Text
           letterSpacing={1}
           color={color}
-          ml={["1em", "5em"]}
           textAlign="center"
+          fontSize={{base: 'sm', md: 'md', lg: 'lg'}}
+          fontWeight="400"
+          fontFamily={'"Public Sans", sans-serif'}
         >
           &copy;{date} Copyright CodewithMubi
         </Text>
