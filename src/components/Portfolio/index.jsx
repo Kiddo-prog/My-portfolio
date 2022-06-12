@@ -38,8 +38,8 @@ export default function PortfolioComponent() {
                 </Box>
               <Spacer />
               <Box flex="5" mb={10} data-aos="fade-left">
-                <Heading fontFamily={'"Public Sans", sans-serif'} mb={5}>{item.title}</Heading>
-                <Text fontFamily={'"Public Sans", sans-serif'}>{item.description}</Text>
+                <Heading fontFamily={'"Public Sans", sans-serif'} mb={5} fontSize={["18px", "20px", "24px", "35px"]}>{item.title}</Heading>
+                <Text fontFamily={'"Public Sans", sans-serif'} fontSize={["14", "16", "19", "20"]}>{item.description}</Text>
                 <Box marginY={5}>
                   {
                     item.tools.map((tool, index) => (

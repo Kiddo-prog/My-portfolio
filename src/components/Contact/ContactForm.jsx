@@ -35,7 +35,7 @@ const Form = () => {
     console.log(input);
   };
   return (
-    <Box id="contact" mx={{ base: "2em", md: "4em", lg: "6em" }} my="5em">
+    <Box id="contact" mx={{ base: "2em", md: "4em", lg: "6em" }} my={5}>
       <Heading
         as="h2"
         fontSize={["28px", "34px", "39px", "45px"]}
@@ -75,8 +75,8 @@ const Form = () => {
       </form>
 
       <VStack mt={10} alignItems={'center'} justifyContent={'center'}>
-        <Text fontWeight={'bold'} fontSize={'2xl'} mb={3} data-aos="fade-up">You can check me on: </Text>
-        <Flex direction="row" mt="1em" data-aos="fade-up">
+        <Text fontWeight={'bold'} fontSize={'2xl'} mb={3}>You can check me on: </Text>
+        <Flex direction="row" mt="1em">
                 <a style={iconLink} href="https://www.facebook.com">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

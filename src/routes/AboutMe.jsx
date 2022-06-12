@@ -4,24 +4,16 @@ import {
   Text, 
   Heading,
   Stack,
-  HStack,
+  Flex,
+  Spacer,
   useColorModeValue
 } from "@chakra-ui/react";
 import { useTypewriter } from 'react-simple-typewriter';
-import { VideoScroll } from 'react-video-scroll'
 
 
 export default function AboutMe() {
 
   const aboutAfterContentBg = useColorModeValue("#000", "#fff")
-  const setStyles = (wrapperEl, videoEl, playbackRate) => {
-    wrapperEl.style.marginTop = `calc(180% - ${Math.floor(videoEl.duration) *
-      playbackRate +
-      'px'})`
-    wrapperEl.style.marginBottom = `calc(180% - ${Math.floor(videoEl.duration) *
-      playbackRate +
-      'px'})`
-  }
 
   const {text} = useTypewriter({
     words: ['Richer', 'Smarter', 'Happier'],
@@ -40,33 +32,22 @@ export default function AboutMe() {
       >
         About me
       </Heading>
-      <Stack mt={20}>
-        <HStack 
+      <Stack mt={20} spacing={5}>
+        <Flex 
           justifyContent={'space-between'} 
-          flexWrap={{base: 'wrap', md: 'nowrap', lg: 'nowrap'}} 
           alignItems={'flex-start'} 
+          direction={{base: 'column', md: 'row', lg: 'row'}}
           spacing={10}
           my={{base: 5, md: 10, lg: 10}}
+          rowGap={5}
+          columnGap={7}
           >
           <Box data-aos="fade-right">
-          <VideoScroll
-            onLoad={props =>
-              setStyles(props.wrapperEl, props.videoEl, props.playbackRate)
-            }
-            playbackRate={15}
-            style={{ position: 'sticky' }}
-          >
-            <video
-              tabIndex="0"
-              autobuffer="autobuffer"
-              preload="preload"
-              style={{ width: '100%', objectFit: 'cover' }}
-              playsInline
-            >
-              <source type="video/mp4" src="/about-me.mp4" />
-            </video>
-          </VideoScroll>
+          <video controls autoplay loop>
+            <source src="/about-me.mp4" type="video/mp4" />
+          </video>
           </Box>
+          <Spacer />
             <Text fontSize={["14", "16", "19", "20"]} fontWeight="400" fontFamily={'"Public Sans", sans-serif'} data-aos="zoom-in">
             I'm a Fullstack developer with a passion for developing scalable web
             applications. Growing my skillset, great
@@ -74,7 +55,7 @@ export default function AboutMe() {
             making people{" "}
             {/* <b>{text}</b> */}
           </Text>
-        </HStack>
+        </Flex>
       </Stack>
     </Box>
   );
