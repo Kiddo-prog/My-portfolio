@@ -4,7 +4,8 @@ import {
   Text, 
   Heading,
   Stack,
-  HStack
+  HStack,
+  useColorModeValue
 } from "@chakra-ui/react";
 import { useTypewriter } from 'react-simple-typewriter';
 import { VideoScroll } from 'react-video-scroll'
@@ -12,6 +13,7 @@ import { VideoScroll } from 'react-video-scroll'
 
 export default function AboutMe() {
 
+  const aboutAfterContentBg = useColorModeValue("#000", "#fff")
   const setStyles = (wrapperEl, videoEl, playbackRate) => {
     wrapperEl.style.marginTop = `calc(180% - ${Math.floor(videoEl.duration) *
       playbackRate +
@@ -29,12 +31,12 @@ export default function AboutMe() {
   })
 
   return (
-    <Box my={["3em", "4em"]} mx={["2em", "3em"]}>
+    <Box my={["3em", "4em"]} mx={["2em", "3em"]} id="about">
       <Heading
         fontSize={["18px", "20px", "24px", "35px"]}
         mb="0.5em"
         fontFamily={'"Public Sans", sans-serif'}
-        _after={{content: '""', display: 'block', bgColor: 'black', width: '6%', height: '5px', mt: 2}}
+        _after={{content: '""', display: 'block', bgColor: aboutAfterContentBg, width: '6%', height: '5px', mt: 2}}
       >
         About me
       </Heading>
