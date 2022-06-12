@@ -75,7 +75,7 @@ const Form = () => {
       </form>
 
       <VStack mt={10} alignItems={'center'} justifyContent={'center'}>
-        <Text fontWeight={'bold'} fontSize={'2xl'} mb={3}>You can check me on: </Text>
+        <Text fontWeight={'bold'} mb={3} fontSize={["18px", "20px", "24px", "35px"]}>You can check me on: </Text>
         <Flex direction="row" mt="1em">
                 <a style={iconLink} href="https://www.facebook.com">
                   <svg
