@@ -1,13 +1,13 @@
 import React from "react";
 import { Flex, Heading, Box, Image } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import { useColorModeValue } from "@chakra-ui/react";
 import DarkMode from "../utils/DarkMode";
+
+import { HashLink } from "react-router-hash-link";
 
 import MobileMenu from '../SideMenu'
 
 export default function Navigation({ mode }) {
-  // const bg = useColorModeValue("rgb(2,0,36)", "#fff");
   const color = useColorModeValue("rgb(2,0,36)",  "#fff");
   const link = {
     letterSpacing: "1.5px",
@@ -25,25 +25,25 @@ export default function Navigation({ mode }) {
             letterSpacing="2px"
             display="flex"
           >
-            <Link to="/">
+            <HashLink smooth to="/">
               <Image src={'/images/logo.png'} alt="logo" />
-            </Link>
+            </HashLink>
           </Heading>
         </Box>
         <Box
           fontSize={["9", "10", "11", "13"]}
           display={{ base: "none", md: "block", lg: "block" }}
         >
-          <Link to="/about" style={link}>
+          <HashLink smooth to="/#about" style={link}>
             About
-          </Link>
-          <Link to="/portfolio" style={link}>
+          </HashLink>
+          <HashLink smooth to="/#portfolio" style={link}>
             Projects
-          </Link>
+          </HashLink>
 
-          <Link to="/contact" style={link}>
+          <HashLink smooth to="/#contact" style={link}>
             Contact
-          </Link>
+          </HashLink>
           <DarkMode />
         </Box>
         <MobileMenu />

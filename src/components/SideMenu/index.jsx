@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button, Box } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import {
   Drawer,
   DrawerBody,
@@ -12,9 +11,12 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
+import DarkMode from "../utils/DarkMode";
+
+import { HashLink } from "react-router-hash-link";
+
 function MobileMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [placement] = useState("top");
 
   const menuLink = {
     display: "block",
@@ -30,11 +32,14 @@ function MobileMenu() {
         <Button colorScheme="blue" onClick={onOpen}>
           <HamburgerIcon />
         </Button>
-        <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
+        <Drawer 
+          placement="right" 
+          onClose={onClose} 
+          isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>
             <DrawerHeader borderBottomWidth="1px">
-              <Link to="/">Home</Link>
+              <HashLink smooth to="/">Home</HashLink>
               <DrawerCloseButton
                 size={["10", "15", "20", "25"]}
                 style={{ marginTop: "10px" }}
@@ -42,15 +47,16 @@ function MobileMenu() {
             </DrawerHeader>
             <DrawerBody>
               <Box fontSize={["10", "12", "14", "16"]} my="30px">
-                <Link to="/about" style={menuLink}>
+                <HashLink smooth to="/#about" style={menuLink}>
                   About
-                </Link>
-                <Link to="/portfolio" style={menuLink}>
+                </HashLink>
+                <HashLink smooth to="/#portfolio" style={menuLink}>
                   Portfolio
-                </Link>{" "}
-                <Link to="/contact" style={menuLink}>
+                </HashLink>{" "}
+                <HashLink smooth to="/#contact" style={menuLink}>
                   Contact
-                </Link>
+                </HashLink>
+                <DarkMode />
               </Box>
             </DrawerBody>
           </DrawerContent>
