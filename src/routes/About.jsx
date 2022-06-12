@@ -8,13 +8,16 @@ import {
   Spacer,
   HStack,
   Button,
-  Stack
+  Stack,
+  useColorModeValue
 } from "@chakra-ui/react";
 
 import { DownloadIcon } from '@chakra-ui/icons';
 import { useTypewriter } from 'react-simple-typewriter'
 
 export default function About() {
+
+  const bgColor = useColorModeValue('blackAlpha.600', 'white')
   const {text} = useTypewriter({
     words: ['FullStack Web Developer', 'Python Programmer'],
     loop: 0,
@@ -39,8 +42,8 @@ export default function About() {
             I'm a&nbsp;{text}
           </Heading>
           <HStack justifyContent={'space-around'}  alignItems={'center'} spacing={5}>
-            <Box w={'2%'} height={'120px'} bgColor={'blackAlpha.600'}></Box>
-          <Text fontSize={["13", "16", "19", "20"]} fontFamily={'"Public Sans", sans-serif'}>
+            <Box w={'2%'} height={'120px'} bgColor={bgColor}></Box>
+          <Text fontSize={["13", "16", "19", "20"]} fontFamily={'"Public Sans", sans-serif'} data-aos="fade-down">
             My name is <b>Hussein Mubarak</b>. Passionate about programming, love
             solving problems and most importantly, contributing to the world through tech.
             Also, deliver more than expected.
