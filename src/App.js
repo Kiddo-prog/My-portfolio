@@ -4,11 +4,12 @@ import About from "./routes/About.jsx";
 import Main from "./components/Main.jsx";
 import { Route, Routes } from "react-router-dom";
 
+import Navigation from "./components/Header";
 import AboutMe from "./routes/AboutMe";
 import Portfolio from "./routes/Portfolio";
 import Services from "./routes/Services";
 import Testimonial from "./routes/Testimonial";
-import Navigation from "./components/Header";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import AOS from 'aos';
@@ -26,12 +27,16 @@ function App() {
     <>
       <Navigation />
       <About />
-      <Main />
+      <AboutMe />
+      <Portfolio />
+      <Contact />
+      {/* <Main /> */}
         <Routes>
-            <Route path="/about" element={<AboutMe />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="#about" element={<AboutMe />} />
+            <Route path="#portfolio" element={<Portfolio />} />
+            <Route path="#contact" element={<Contact />} />
             <Route path="/service" element={<Services />} />
-          <Route path="/testimonial" element={<Testimonial />} />
+            <Route path="/testimonial" element={<Testimonial />} />
         </Routes>
         <Footer />
     </>
