@@ -46,7 +46,7 @@ export default function AboutMe() {
           spacing={10}
           my={{base: 5, md: 10, lg: 10}}
           >
-          <Box>
+          <Box data-aos="fade-right">
           <VideoScroll
             onLoad={props =>
               setStyles(props.wrapperEl, props.videoEl, props.playbackRate)
@@ -65,7 +65,7 @@ export default function AboutMe() {
             </video>
           </VideoScroll>
           </Box>
-            <Text fontSize={["14", "16", "19", "20"]} fontWeight="400" fontFamily={'"Public Sans", sans-serif'}>
+            <Text fontSize={["14", "16", "19", "20"]} fontWeight="400" fontFamily={'"Public Sans", sans-serif'} data-aos="zoom-in">
             I'm a Fullstack developer with a passion for developing scalable web
             applications. Growing my skillset, great
             collaboration with teams while contributing to the positive outcome of
