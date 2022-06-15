@@ -62,6 +62,15 @@
                "link": "https://expensewebproject.herokuapp.com/docs",
                "github": "https://github.com/Kiddo-prog/expense-backend-api",
                "tools": ["Python", "Django", "DRF", "Swagger UI", "Djoser"]
+          },
+          {
+               "id": 1,
+               "title": "Wifibase Landing Page",
+               "image": "/images/metabolite.png",
+               "description": "Built with NextJs, styling made with Chakra UI. It contains Home, About, Services, Register & Login views. I created this project to help clients and customers know more about the company and all it entails.",
+               "link": "https://wifibase.vercel.app/",
+               "github": "https://github.com/Kiddo-prog/wifibase-",
+               "tools": ["NextJs", "Chakra UI"]
           }
      ]
 }
