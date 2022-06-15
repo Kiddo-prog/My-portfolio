@@ -64,7 +64,7 @@
                "tools": ["Python", "Django", "DRF", "Swagger UI", "Djoser"]
           },
           {
-               "id": 1,
+               "id": 8,
                "title": "Wifibase Landing Page",
                "image": "/images/metabolite.png",
                "description": "Built with NextJs, styling made with Chakra UI. It contains Home, About, Services, Register & Login views. I created this project to help clients and customers know more about the company and all it entails.",
