@@ -11,6 +11,7 @@ import Services from "./routes/Services";
 import Testimonial from "./routes/Testimonial";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Skill from "./components/Skill"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -29,6 +30,7 @@ function App() {
       <About />
       <AboutMe />
       <Portfolio />
+      <Skill />
       <Contact />
       {/* <Main /> */}
         <Routes>
