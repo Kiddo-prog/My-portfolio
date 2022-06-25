@@ -53,6 +53,15 @@
                "link": "https://wifibase.vercel.app/",
                "github": "https://github.com/Kiddo-prog/wifibase-",
                "tools": ["NextJs", "Chakra UI"]
+          },
+          {
+               "id": 7,
+               "title": "Shopit Ecommerce App",
+               "image": "/images/shopit.PNG",
+               "description": "Built with NextJs and styled with TailwindCss.",
+               "link": "https://shopit-nine.vercel.app/",
+               "github": "https://github.com/Kiddo-prog/Shopit",
+               "tools": ["NextJs", "TailwindCss", "commercejs"]
           }
      ]
 }
